@@ -157,7 +157,12 @@
                         rigorous feasibility and viability appraisals, along with specialized real estate
                         consultancy, set us apart.
                     </p>
-
+                    <p>
+                        While our credentials empower us to practice every facet of estate surveying and valuation,
+                        our principal focus remains property management, driven by leadership with over a decade of
+                        industry expertise. With unwavering confidence and commitment, we deliver excellence that
+                        inspires trust in every project.
+                    </p>
                 </div>
 
 
@@ -165,36 +170,37 @@
                     class="mt-4 inline-flex items-center bg-orange-500 text-white corner-radius 10 py-2 px-4 rounded mx-auto">
                     <span class="mr-2"></span>
                     Our Firm →
-                    <section class="w-full h-[60vh] sm:h-[80vh] md:h-screen bg-cover bg-center"
-                    style="background-image: url('img/FLIER.svg');">
-                    <!-- This section shows only the background image -->
-                </section>
-                
-                <style>
-                    @media (max-width: 768px) {
-                        /* For mobile view */
-                        .bg-cover {
-                            background-size: 90% auto; /* Slightly reduce the size on mobile */
-                            background-position: center center; /* Keeps the image centered */
-                        }
-                    }
-                
-                    @media (min-width: 768px) {
-                        /* For tablet and desktop view */
-                        .bg-cover {
-                            background-size: cover; /* Ensure the image fully covers the section */
-                            background-position: center center; /* Keeps the image centered */
-                        }
-                    }
-                </style>                
+                </a>
             </section>
-
+            <section class="w-full h-[60vh] sm:h-[80vh] md:h-screen bg-cover bg-center" 
+            style="background-image: url('img/FLIER.svg'); background-size: 80%; background-position: center center; background-repeat: no-repeat;">
+            <!-- This section shows only the background image -->
+        </section>
+        
+        <style>
+            @media (max-width: 768px) {
+                /* For mobile view */
+                .bg-cover {
+                    background-size: 83%; /* Adjust for mobile devices */
+                    background-position: center center;
+                }
+            }
+        
+            @media (min-width: 768px) {
+                /* For tablet and desktop view */
+                .bg-cover {
+                    background-size: 80%; /* Adjust for larger screens */
+                    background-position: center center;
+                }
+            }
+        </style>
+        
 
             <!-- Mission Text Container -->
             <section class="w-full bg-white py-10">
                 <div class="container mx-auto text-center">
                     <h4 class="text-sm font-bold text-blue-900 mb-4">__ OUR MISSION __</h4>
-                    <h2 class="text-2xl font-regular text-blue-900 mb-2">We Build Suitable Communities</h2>
+                    <h2 class="text-4xl font-regular text-blue-900 mb-2">We Build Suitable Communities</h2>
                     <p class="text-base text-gray-600">
                         At Peter Abiade & Co, client satisfaction is at the core of everything we do. Every project
                         undergoes a thorough quality assurance process to ensure durability, functionality, and
@@ -251,31 +257,33 @@
                 }
             </style>
 
-            <!-- Footer -->
-            <footer class="w-full bg-blue-900 text-white p-4 mt-8">
-                <!-- Your footer content here -->
-                <p class="text-center">© 2025 Your Website. All Rights Reserved.</p>
-            </footer>
-            
-            <style>
-                /* Make sure the footer stays at the bottom */
-                body, html {
-                    height: 100%;
-                    margin: 0;
-                }
-            
-                .footer-wrapper {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    min-height: 100vh;
-                }
-            
-                footer {
-                    margin-top: auto; /* Pushes the footer to the bottom */
-                }
-            </style>
-            
+<footer id="footer" class=" bottom-0 left-0 w-full bg-blue-900 text-white p-4 z-50">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row md:justify-between items-center">
+            <!-- Address with Icon -->
+            <div class="flex items-center mb-4 md:mb-0">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                        d="M5.05 2.05a7 7 0 019.9 0 7 7 0 010 9.9l-4.95 4.95a.7.7 0 01-.99 0L5.05 11.95a7 7 0 010-9.9zM10 9a2 2 0 100-4 2 2 0 000 4z"
+                        clip-rule="evenodd" />
+                </svg>
+                <a href="https://www.google.com/maps/search/?api=1&query=Mystee-Kay+Plaza,+Office+1,+2nd+Floor,+551+Agege+Motor+Road,+Ladipo+Estate,+Ladipo-Oshodi,+Lagos"
+                    target="_blank" class="underline text-sm text-orange-500">
+                    Mystee-Kay Plaza, Office 1, 2nd Floor, 551 Agege Motor Road, Ladipo Lagos.
+                </a>
+            </div>
+            <!-- Phone Numbers and Emails -->
+            <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
+                <div class="text-sm">
+                    <p>08033338814, 08098338814, 08128144252</p>
+                </div>
+                <div class="container mx-auto text-center mb-4">
+                    <p class="text-sm">&copy; 2025 Peter Abiade & Co</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
             <script>
                 // Parent Carousel Logic
