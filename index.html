@@ -157,7 +157,7 @@
                         rigorous feasibility and viability appraisals, along with specialized real estate
                         consultancy, set us apart.
                     </p>
-                
+
                 </div>
 
 
@@ -166,22 +166,37 @@
                     <span class="mr-2"></span>
                     Our Firm →
                 </a>
-                <section class="w-full h-[60vh] sm:h-[80vh] md:h-screen bg-cover bg-center" 
-                style="background-image: url('img/FLIER.svg');">
-                <!-- This section shows only the background image -->
-            </section>
-            
-            <style>
-                @media (max-width: 768px) {
-                    /* For mobile view */
-                    .bg-cover {
-                        background-size: cover; /* Use cover instead of contain for better fill */
-                        background-position: top center; /* Align the top of the image */
+                <section class="w-full h-[60vh] sm:h-[80vh] md:h-screen bg-cover bg-center"
+                    style="background-image: url('img/FLIER.svg');">
+                    <!-- This section shows only the background image -->
+                </section>
+
+                <style>
+                    @media (max-width: 768px) {
+
+                        /* For mobile view */
+                        .bg-cover {
+                            background-size: contain;
+                            /* Adjusts the image to fit within the container */
+                            background-position: center center;
+                            /* Keeps the image centered */
+                        }
                     }
-                }
-            </style>
-            
-            
+
+                    @media (min-width: 768px) {
+
+                        /* For tablet and desktop view */
+                        .bg-cover {
+                            background-size: cover;
+                            /* Ensures the image fully covers the section */
+                            background-position: center center;
+                            /* Keeps the image centered */
+                        }
+                    }
+                </style>
+            </section>
+
+
             <!-- Mission Text Container -->
             <section class="w-full bg-white py-10">
                 <div class="container mx-auto text-center">
@@ -245,12 +260,8 @@
 
             <!-- Footer -->
             <footer class="bg-blue-900 text-white py-6">
-                <!-- Copyright -->
-
-                <!-- Contact Information -->
                 <div class="container mx-auto px-6">
                     <div class="flex flex-col md:flex-row md:justify-between items-center">
-                        <!-- Address with Icon -->
                         <div class="flex items-center mb-4 md:mb-0">
                             <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd"
@@ -262,20 +273,18 @@
                                 Mystee-Kay Plaza, Office 1, 2nd Floor, 551 Agege Motor Road, Ladipo Lagos.
                             </a>
                         </div>
-                        <!-- Phone Numbers and Emails -->
-                        <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
-                            <div class="text-sm">
-                                <p>08033338814, 08098338814, 08128144252</p>
-                            </div>
-                            <div class="text-sm">
-                            </div>
-                            <div class="container mx-auto text-center mb-4">
-                                <p class="text-sm">&copy; 2025 Peter Abiade & Co</p>
-                            </div>
+
+                        <div class="text-sm">
+                            <p>08033338814, 08098338814, 08128144252</p>
+                        </div>
+
+                        <div class="text-center mt-4 md:mt-0">
+                            <p class="text-sm">&copy; 2025 Peter Abiade & Co</p>
                         </div>
                     </div>
                 </div>
             </footer>
+
             <script>
                 // Parent Carousel Logic
                 let currentParentSlide = 0;
