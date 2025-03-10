@@ -157,12 +157,6 @@
                         rigorous feasibility and viability appraisals, along with specialized real estate
                         consultancy, set us apart.
                     </p>
-                    <p>
-                        While our credentials empower us to practice every facet of estate surveying and valuation,
-                        our principal focus remains property management, driven by leadership with over a decade of
-                        industry expertise. With unwavering confidence and commitment, we deliver excellence that
-                        inspires trust in every project.
-                    </p>
                 </div>
 
 
@@ -172,29 +166,10 @@
                     Our Firm →
                 </a>
             </section>
-            <section class="w-full h-[60vh] sm:h-[80vh] md:h-screen bg-cover bg-center" 
-            style="background-image: url('img/FLIER.svg'); background-size: 80%; background-position: center center; background-repeat: no-repeat;">
-            <!-- This section shows only the background image -->
-        </section>
-        
-        <style>
-            @media (max-width: 768px) {
-                /* For mobile view */
-                .bg-cover {
-                    background-size: 83%; /* Adjust for mobile devices */
-                    background-position: center center;
-                }
-            }
-        
-            @media (min-width: 768px) {
-                /* For tablet and desktop view */
-                .bg-cover {
-                    background-size: 80%; /* Adjust for larger screens */
-                    background-position: center center;
-                }
-            }
-        </style>
-        
+            <section class="w-full h-[100vh] sm:h-[100vh] md:h-screen bg-cover bg-center"
+                style="background-image: url('img/FLIER.svg');">
+                <!-- This section shows only the background image -->
+            </section>
 
             <!-- Mission Text Container -->
             <section class="w-full bg-white py-10">
@@ -257,7 +232,10 @@
                 }
             </style>
 
-<footer id="footer" class=" bottom-0 left-0 w-full bg-blue-900 text-white p-4 z-50">
+<footer class="bg-blue-900 text-white py-6">
+    <!-- Copyright -->
+
+    <!-- Contact Information -->
     <div class="container mx-auto px-6">
         <div class="flex flex-col md:flex-row md:justify-between items-center">
             <!-- Address with Icon -->
@@ -277,6 +255,8 @@
                 <div class="text-sm">
                     <p>08033338814, 08098338814, 08128144252</p>
                 </div>
+                <div class="text-sm">
+                </div>
                 <div class="container mx-auto text-center mb-4">
                     <p class="text-sm">&copy; 2025 Peter Abiade & Co</p>
                 </div>
@@ -284,57 +264,6 @@
         </div>
     </div>
 </footer>
-
-            <script>
-                // Parent Carousel Logic
-                let currentParentSlide = 0;
-                const parentSlides = document.querySelectorAll('.parentSlide');
-                const totalParentSlides = parentSlides.length;
-                const parentCarouselInner = document.getElementById('parentCarouselInner');
-
-                function updateParentCarousel() {
-                    const offset = -currentParentSlide * 100;
-                    parentCarouselInner.style.transform = `translateX(${offset}%)`;
-                }
-
-                document.getElementById('nextParent').addEventListener('click', () => {
-                    currentParentSlide = (currentParentSlide + 1) % totalParentSlides;
-                    updateParentCarousel();
-                });
-                document.getElementById('prevParent').addEventListener('click', () => {
-                    currentParentSlide = (currentParentSlide - 1 + totalParentSlides) % totalParentSlides;
-                    updateParentCarousel();
-                });
-
-                // Auto Slide Parent Carousel every 6 seconds
-                setInterval(() => {
-                    currentParentSlide = (currentParentSlide + 1) % totalParentSlides;
-                    updateParentCarousel();
-                }, 6000);
-
-                // Sub Carousel Logic for Each Parent Slide
-                const currentSubSlides = [0, 0, 0, 0]; // one per parent slide
-                const totalSubSlides = 5; // each sub-carousel has 5 slides
-
-                function updateSubCarousel(parentIndex) {
-                    const subCarouselInner = document.querySelectorAll('.subCarouselInner')[parentIndex];
-                    const offset = -currentSubSlides[parentIndex] * 100;
-                    subCarouselInner.style.transform = `translateX(${offset}%)`;
-                }
-
-                function nextSubSlide(parentIndex) {
-                    currentSubSlides[parentIndex] = (currentSubSlides[parentIndex] + 1) % totalSubSlides;
-                    updateSubCarousel(parentIndex);
-                }
-                function prevSubSlide(parentIndex) {
-                    currentSubSlides[parentIndex] = (currentSubSlides[parentIndex] - 1 + totalSubSlides) % totalSubSlides;
-                    updateSubCarousel(parentIndex);
-                }
-
-            </script>
-</body>
-
-</html>
 
 </body>
 
