@@ -175,11 +175,12 @@
                 @media (max-width: 768px) {
                     /* For mobile view */
                     .bg-cover {
-                        background-size: contain; /* This will scale the image to fit */
-                        background-position: center center; /* Keeps the image centered */
+                        background-size: cover; /* Use cover instead of contain for better fill */
+                        background-position: top center; /* Align the top of the image */
                     }
                 }
             </style>
+            
             
             <!-- Mission Text Container -->
             <section class="w-full bg-white py-10">
