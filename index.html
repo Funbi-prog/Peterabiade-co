@@ -12,58 +12,63 @@
 </head>
 
 <body class="bg-white text-gray-900">
-<!-- Navbar -->
-<nav class="bg-white text-blue-900 sticky top-0 z-50 shadow-md">
-    <div class="flex items-center justify-between py-2 px-6">
-       
-      <div class="flex items-center">
-        <img src="img/PAC LOGO.svg" alt="Peter Abiade & Co Logo" class="h-16 w-auto mr-2" />
-        <div class="block text-center md:text-left">
-          <h1 class="text-lg md:text-xl font-bold">Peter Abiade & Co</h1>
-          <p class="text-xs md:text-sm">Real Estate Agency</p>
+    <!-- Navbar -->
+    <nav class="bg-white text-blue-900 sticky top-0 z-50 shadow-md">
+        <div class="flex items-center justify-between py-2 px-6">
+
+            <div class="flex items-center">
+                <img src="img/PAC LOGO.svg" alt="Peter Abiade & Co Logo" class="h-16 w-auto mr-2" />
+                <div class="block text-center md:text-left">
+                    <h1 class="text-lg md:text-xl font-bold">Peter Abiade & Co</h1>
+                    <p class="text-xs md:text-sm">Real Estate Agency</p>
+                </div>
+            </div>
+
+            <!-- Right: Navigation Links (Desktop) -->
+            <div class="hidden md:flex space-x-6">
+                <a href="about.html" class="text-base font-semibold hover:text-blue-700">About</a>
+                <a href="services.html" class="text-base font-semibold hover:text-blue-700">Services</a>
+                <a href="listing.html" class="text-base font-semibold hover:text-blue-700">Listing</a>
+                <a href="contact.html" class="text-base font-semibold hover:text-blue-700">Contact</a>
+
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
         </div>
-      </div>
 
-      <!-- Right: Navigation Links (Desktop) -->
-      <div class="hidden md:flex space-x-6">
-        <a href="about.html" class="text-base font-semibold hover:text-blue-700">About</a>
-        <a href="services.html" class="text-base font-semibold hover:text-blue-700">Services</a>
-        <a href="listing.html" class="text-base font-semibold hover:text-blue-700">Listing</a>
-        <a href="contact.html" class="text-base font-semibold hover:text-blue-700">Contact</a>
-       
-    </div>
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden bg-white">
+            <a href="about.html"
+                class="block px-6 py-3 text-base font-semibold hover:bg-blue-100 hover:text-blue-900">About</a>
+            <a href="services.html"
+                class="block px-6 py-3 text-base font-semibold hover:bg-blue-100 hover:text-blue-900">Services</a>
+            <a href="listing.html"
+                class="block px-6 py-3 text-base font-semibold hover:bg-blue-100 hover:text-blue-900">Listing</a>
+            <a href="contact.html"
+                class="block px-6 py-3 text-base font-semibold hover:bg-blue-100 hover:text-blue-900">Contact</a>
 
-      <!-- Mobile Menu Button -->
-      <div class="md:hidden">
-        <button id="mobile-menu-button" class="focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
-      </div>
-    </div>
+        </div>
+    </nav>
 
-    <!-- Mobile Navigation Menu -->
-    <div id="mobile-menu" class="hidden bg-white">
-      <a href="about.html" class="block px-6 py-3 text-base font-semibold hover:bg-blue-100 hover:text-blue-900">About</a>
-      <a href="services.html" class="block px-6 py-3 text-base font-semibold hover:bg-blue-100 hover:text-blue-900">Services</a>
-      <a href="listing.html" class="block px-6 py-3 text-base font-semibold hover:bg-blue-100 hover:text-blue-900">Listing</a>
-    <a href="contact.html" class="block px-6 py-3 text-base font-semibold hover:bg-blue-100 hover:text-blue-900">Contact</a>
-     
-    </div>
-</nav>
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
 
-  <!-- JavaScript for Mobile Menu Toggle -->
-  <script>
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-  
-    mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden'); // Toggle visibility
-    });
-  </script>
-  
-  
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden'); // Toggle visibility
+        });
+    </script>
+
+
 
     <section class="relative w-full h-[500px]">
         <img src="img/complex-aerial-view-city.jpg" alt="Featured Image" class="w-full h-full object-cover" />
@@ -144,14 +149,23 @@
         <style>
             /* Parent Carousel Styles */
             #parentCarousel {
-    overflow: hidden;
-    height: 400px; /* Adjust as needed */
-    width: 100%;
-    margin: auto; /* Centers it horizontally */
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Centers content vertically */
-}
+                overflow: hidden;
+                height: 400px;
+                /* Adjust as needed */
+                width: 80%;
+                margin: 0 auto;
+                /* Centers it horizontally */
+                display: flex;
+                flex-direction: column;
+
+                @media (min-width: 768px) {
+                    flex-direction: row;
+                }
+
+                justify-content: center;
+                align-items: center;
+                /* Centers content vertically */
+            }
 
 
             #parentCarouselInner {
@@ -509,10 +523,10 @@
                     </a>
                 </section>
                 <section class="w-full h-[60vh] sm:h-[80vh] md:h-screen bg-cover bg-center"
-                style="background-image: url('img/FLIER.svg');">
-                <!-- This section shows only the background image -->
-            </section>
-            
+                    style="background-image: url('img/FLIER.svg');">
+                    <!-- This section shows only the background image -->
+                </section>
+
                 <!-- Mission Text Container -->
                 <section class="w-full bg-white py-10">
                     <div class="container mx-auto text-center">
@@ -553,114 +567,107 @@
                     <div class="flex flex-col md:flex-row md:justify-between items-center">
 
                     </div>
+                </div>
+                </div>
+                </footer>
+
+                <!-- CSS for the Partner Logos Slider -->
+                <style>
+                    @keyframes scroll {
+                        0% {
+                            transform: translateX(0);
+                        }
+
+                        100% {
+                            transform: translateX(-50%);
+                        }
+                    }
+
+                    .scrolling-logos {
+                        animation: scroll 20s linear infinite;
+                    }
+                </style>
+
+                <!-- Footer -->
+                <footer class="bg-blue-900 text-white py-6">
+                    <!-- Copyright -->
+
+                    <!-- Contact Information -->
+                    <div class="container mx-auto px-6">
+                        <div class="flex flex-col md:flex-row md:justify-between items-center">
+                            <!-- Address with Icon -->
+                            <div class="flex items-center mb-4 md:mb-0">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M5.05 2.05a7 7 0 019.9 0 7 7 0 010 9.9l-4.95 4.95a.7.7 0 01-.99 0L5.05 11.95a7 7 0 010-9.9zM10 9a2 2 0 100-4 2 2 0 000 4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Mystee-Kay+Plaza,+Office+1,+2nd+Floor,+551+Agege+Motor+Road,+Ladipo+Estate,+Ladipo-Oshodi,+Lagos"
+                                    target="_blank" class="underline text-sm text-orange-500">
+                                    Mystee-Kay Plaza, Office 1, 2nd Floor, 551 Agege Motor Road, Ladipo Lagos.
+                                </a>
+                            </div>
+                            <!-- Phone Numbers and Emails -->
+                            <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
+                                <div class="text-sm">
+                                    <p>08033338814, 08098338814, 08128144252</p>
+                                </div>
+                                <div class="text-sm">
+                                </div>
+                                <div class="container mx-auto text-center mb-4">
+                                    <p class="text-sm">&copy; 2025 Peter Abiade & Co</p>
+                                </div>
                             </div>
                         </div>
-                    </footer>
+                    </div>
+                </footer>
+                <script>
+                    // Parent Carousel Logic
+                    let currentParentSlide = 0;
+                    const parentSlides = document.querySelectorAll('.parentSlide');
+                    const totalParentSlides = parentSlides.length;
+                    const parentCarouselInner = document.getElementById('parentCarouselInner');
 
-                    <!-- CSS for the Partner Logos Slider -->
-                    <style>
-                        @keyframes scroll {
-                            0% {
-                                transform: translateX(0);
-                            }
+                    function updateParentCarousel() {
+                        const offset = -currentParentSlide * 100;
+                        parentCarouselInner.style.transform = `translateX(${offset}%)`;
+                    }
 
-                            100% {
-                                transform: translateX(-50%);
-                            }
-                        }
+                    document.getElementById('nextParent').addEventListener('click', () => {
+                        currentParentSlide = (currentParentSlide + 1) % totalParentSlides;
+                        updateParentCarousel();
+                    });
+                    document.getElementById('prevParent').addEventListener('click', () => {
+                        currentParentSlide = (currentParentSlide - 1 + totalParentSlides) % totalParentSlides;
+                        updateParentCarousel();
+                    });
 
-                        .scrolling-logos {
-                            animation: scroll 20s linear infinite;
-                        }
-                    </style>
+                    // Auto Slide Parent Carousel every 6 seconds
+                    setInterval(() => {
+                        currentParentSlide = (currentParentSlide + 1) % totalParentSlides;
+                        updateParentCarousel();
+                    }, 6000);
 
-                    <!-- Footer -->
-                    <footer class="bg-blue-900 text-white py-6">
-                        <!-- Copyright -->
+                    // Sub Carousel Logic for Each Parent Slide
+                    const currentSubSlides = [0, 0, 0, 0]; // one per parent slide
+                    const totalSubSlides = 5; // each sub-carousel has 5 slides
 
-                        <!-- Contact Information -->
-                        <div class="container mx-auto px-6">
-                            <div class="flex flex-col md:flex-row md:justify-between items-center">
-                                <!-- Address with Icon -->
-                                <div class="flex items-center mb-4 md:mb-0">
-                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M5.05 2.05a7 7 0 019.9 0 7 7 0 010 9.9l-4.95 4.95a.7.7 0 01-.99 0L5.05 11.95a7 7 0 010-9.9zM10 9a2 2 0 100-4 2 2 0 000 4z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                    <a href="https://www.google.com/maps/search/?api=1&query=Mystee-Kay+Plaza,+Office+1,+2nd+Floor,+551+Agege+Motor+Road,+Ladipo+Estate,+Ladipo-Oshodi,+Lagos"
-                                        target="_blank" class="underline text-sm text-orange-500">
-                                        Mystee-Kay Plaza, Office 1, 2nd Floor, 551 Agege Motor Road, Ladipo Lagos.
-                                    </a>
-                                </div>
-                                <!-- Phone Numbers and Emails -->
-                                <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
-                                    <div class="text-sm">
-                                        <p>08033338814, 08098338814, 08128144252</p>
-                                    </div>
-                                    <div class="text-sm">
-                                    </div>
-                                    <div class="container mx-auto text-center mb-4">
-                                        <p class="text-sm">&copy; 2025 Peter Abiade & Co</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </footer>
-                    <script>
-                        // Parent Carousel Logic
-                        let currentParentSlide = 0;
-                        const parentSlides = document.querySelectorAll('.parentSlide');
-                        const totalParentSlides = parentSlides.length;
-                        const parentCarouselInner = document.getElementById('parentCarouselInner');
+                    function updateSubCarousel(parentIndex) {
+                        const subCarouselInner = document.querySelectorAll('.subCarouselInner')[parentIndex];
+                        const offset = -currentSubSlides[parentIndex] * 100;
+                        subCarouselInner.style.transform = `translateX(${offset}%)`;
+                    }
 
-                        function updateParentCarousel() {
-                            const offset = -currentParentSlide * 100;
-                            parentCarouselInner.style.transform = `translateX(${offset}%)`;
-                        }
+                    function nextSubSlide(parentIndex) {
+                        currentSubSlides[parentIndex] = (currentSubSlides[parentIndex] + 1) % totalSubSlides;
+                        updateSubCarousel(parentIndex);
+                    }
+                    function prevSubSlide(parentIndex) {
+                        currentSubSlides[parentIndex] = (currentSubSlides[parentIndex] - 1 + totalSubSlides) % totalSubSlides;
+                        updateSubCarousel(parentIndex);
+                    }
 
-                        document.getElementById('nextParent').addEventListener('click', () => {
-                            currentParentSlide = (currentParentSlide + 1) % totalParentSlides;
-                            updateParentCarousel();
-                        });
-                        document.getElementById('prevParent').addEventListener('click', () => {
-                            currentParentSlide = (currentParentSlide - 1 + totalParentSlides) % totalParentSlides;
-                            updateParentCarousel();
-                        });
-
-                        // Auto Slide Parent Carousel every 6 seconds
-                        setInterval(() => {
-                            currentParentSlide = (currentParentSlide + 1) % totalParentSlides;
-                            updateParentCarousel();
-                        }, 6000);
-
-                        // Sub Carousel Logic for Each Parent Slide
-                        const currentSubSlides = [0, 0, 0, 0]; // one per parent slide
-                        const totalSubSlides = 5; // each sub-carousel has 5 slides
-
-                        function updateSubCarousel(parentIndex) {
-                            const subCarouselInner = document.querySelectorAll('.subCarouselInner')[parentIndex];
-                            const offset = -currentSubSlides[parentIndex] * 100;
-                            subCarouselInner.style.transform = `translateX(${offset}%)`;
-                        }
-
-                        function nextSubSlide(parentIndex) {
-                            currentSubSlides[parentIndex] = (currentSubSlides[parentIndex] + 1) % totalSubSlides;
-                            updateSubCarousel(parentIndex);
-                        }
-                        function prevSubSlide(parentIndex) {
-                            currentSubSlides[parentIndex] = (currentSubSlides[parentIndex] - 1 + totalSubSlides) % totalSubSlides;
-                            updateSubCarousel(parentIndex);
-                        }
-
-                        // Auto slide each sub-carousel every 6 seconds
-                        setInterval(() => {
-                            for (let i = 0; i < currentSubSlides.length; i++) {
-                                currentSubSlides[i] = (currentSubSlides[i] + 1) % totalSubSlides;
-                                updateSubCarousel(i);
-                            }
-                        }, 6000);
-                    </script>
+                </script>
     </body>
 
     </html>
