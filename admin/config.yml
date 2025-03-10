@@ -1,11 +1,12 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: main  # Use 'main' or 'master' based on your GitHub branch
 
-media_folder: "static/uploads"
-public_folder: "/uploads"
+media_folder: "static/uploads"  # Media (images) will be stored here
+public_folder: "/uploads"  # Path for publicly accessible media
 
 collections:
+  # Blog posts collection
   - name: "posts"
     label: "Blog Posts"
     folder: "content/posts"
@@ -15,3 +16,32 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  # Listings collection
+  - name: "listings"
+    label: "Listings"
+    folder: "content/listings"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+      - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured", name: "featured", widget: "boolean" }
+      - { label: "Sold", name: "sold", widget: "boolean" }
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Contact Email", name: "contact_email", widget: "string" }
+      - { label: "Contact Phone", name: "contact_phone", widget: "string" }
+      - { label: "Contact Name", name: "contact_name", widget: "string" }
+      - { label: "Contact Address", name: "contact_address", widget: "string" }
+      - { label: "Contact City", name: "contact_city", widget: "string" }
+      - { label: "Contact State", name: "contact_state", widget: "string" }
+      - { label: "Contact Zip", name: "contact_zip", widget: "string" }
+      - { label: "Contact Country", name: "contact_country", widget: "string" }
+      - { label: "Contact Website", name: "contact_website", widget: "string" }
+      - { label: "Contact Social", name: "contact_social", widget: "string" }
+      - { label: "Contact Notes", name: "contact_notes", widget: "string" }
+      - { label: "Contact Image", name: "contact_image", widget: "image" }
+      
