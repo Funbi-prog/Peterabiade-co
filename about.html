@@ -53,13 +53,17 @@
 </nav>
 
 
-    <!-- Background Video -->
-    <div class="relative w-full h-screen">
-        <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover ">
-            <source src="img/WhatsApp Video 2025-03-07 at 03.05.00_73e9d129.mp4" type="video/mp4">
-        </video>
-        <div class="absolute inset-0 bg-black opacity-40"></div>
-    </div>
+<!-- Background Video Section -->
+<div class="relative w-full h-screen">
+    <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover">
+        <!-- Multiple video formats for cross-browser compatibility -->
+        <source src="img/WhatsApp Video 2025-03-07 at 03.05.00_73e9d129.mp4" type="video/mp4">
+        <source src="img/WhatsApp Video 2025-03-07 at 03.05.00_73e9d129.webm" type="video/webm">
+        <source src="img/WhatsApp Video 2025-03-07 at 03.05.00_73e9d129.ogv" type="video/ogg">
+    </video>
+    <!-- Optional dark overlay for better readability -->
+    <div class="absolute inset-0 bg-black opacity-40"></div>
+</div>
 
     <!-- Main Content -->
     <div class="container mx-auto px-6 py-16">
