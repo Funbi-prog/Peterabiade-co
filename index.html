@@ -137,540 +137,190 @@
         </h3>
     </section>
 
+    <section class="my-8 font-sans text-center">
+        <h1 class="text-2xl">
+            <section class="my-8 font-sans text-center">
+                <h1 class="text-3xl text-blue-900 mb-4">
+                    Who We Are
+                </h1>
+                <div class="mt-3 text-gray-500 text-base leading-relaxed">
+                    <p>
+                        PETER ABIADE &amp; CO. is a professional firm of estate surveyors &amp; valuers, established
+                        in 2005 and fully registered with the Estate Surveyors and Valuers Registration Board of
+                        Surveying and Valuation (ESVRBON) throughout the Federation, as well as with the Corporate
+                        Affairs Commission, Abuja. Our team of seasoned experts excels in property valuation, market
+                        analysis, and comprehensive property management.
+                    </p>
+                    <p>
+                        We provide a full spectrum of estate agency services—from negotiating leases and sales to
+                        procuring residential, commercial, industrial, and recreational properties. In addition, our
+                        rigorous feasibility and viability appraisals, along with specialized real estate
+                        consultancy, set us apart.
+                    </p>
+                    <p>
+                        While our credentials empower us to practice every facet of estate surveying and valuation,
+                        our principal focus remains property management, driven by leadership with over a decade of
+                        industry expertise. With unwavering confidence and commitment, we deliver excellence that
+                        inspires trust in every project.
+                    </p>
+                </div>
 
-    <!DOCTYPE html>
-    <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Peter Abiade & Co - Listings</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <style>
-            /* Parent Carousel Styles */
-            #parentCarousel {
-                overflow: hidden;
-                height: 400px;
-                /* Adjust as needed */
-                width: 80%;
-                margin: 0 auto;
-                /* Centers it horizontally */
-                display: flex;
-                flex-direction: column;
+                <a href="about-us.html"
+                    class="mt-4 inline-flex items-center bg-orange-500 text-white corner-radius 10 py-2 px-4 rounded mx-auto">
+                    <span class="mr-2"></span>
+                    Our Firm →
+                </a>
+            </section>
+            <section class="w-full h-[60vh] sm:h-[80vh] md:h-screen bg-cover bg-center"
+                style="background-image: url('img/FLIER.svg');">
+                <!-- This section shows only the background image -->
+            </section>
 
-                @media (min-width: 768px) {
-                    flex-direction: row;
+            <!-- Mission Text Container -->
+            <section class="w-full bg-white py-10">
+                <div class="container mx-auto text-center">
+                    <h4 class="text-sm font-bold text-blue-900 mb-4">__ OUR MISSION __</h4>
+                    <h2 class="text-4xl font-regular text-blue-900 mb-2">We Build Suitable Communities</h2>
+                    <p class="text-base text-gray-600">
+                        At Peter Abiade & Co, client satisfaction is at the core of everything we do. Every project
+                        undergoes a thorough quality assurance process to ensure durability, functionality, and
+                        aesthetic excellence. We integrate sustainable practices, including efficient water and
+                        energy management, as well as responsible waste disposal, to create eco-friendly
+                        developments. Our off-plan approach ensures that you are actively involved at every
+                        stage—from architectural design to construction and completion—so your vision is realized
+                        with precision. We don’t just build structures; we create spaces that enhance lives and
+                        communities.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Partner Logos Slider (Above Footer) -->
+            <section class="bg-white py-4 overflow-hidden">
+                <div class="relative">
+                    <div class="flex items-center space-x-8 scrolling-logos">
+                        <!-- Example partner logos – repeat them for seamless scrolling -->
+                        <img src="img/Esvarbon.jpg" alt="Partner 1" class="h-12 w-auto">
+                        <img src="img/OIP.jpeg" alt="Partner 2" class="h-12 w-auto">
+                        <img src="img/PAC LOGO.svg" alt="Partner 3" class="h-12 w-auto">
+                        <img src="img/djfmz3p3.png" alt="Partner 4" class="h-12 w-auto">
+                        <!-- Repeat logos for seamless loop -->
+                        <img src="img/Esvarbon.jpg" alt="Partner 1" class="h-12 w-auto">
+                        <img src="img/OIP.jpeg" alt="Partner 2" class="h-12 w-auto">
+                        <img src="img/PAC LOGO.svg" alt="Partner 3" class="h-12 w-auto">
+                        <img src="img/djfmz3p3.png" alt="Partner 4" class="h-12 w-auto">
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Information -->
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row md:justify-between items-center">
+
+                </div>
+            </div>
+            </div>
+            </footer>
+
+            <!-- CSS for the Partner Logos Slider -->
+            <style>
+                @keyframes scroll {
+                    0% {
+                        transform: translateX(0);
+                    }
+
+                    100% {
+                        transform: translateX(-50%);
+                    }
                 }
 
-                justify-content: center;
-                align-items: center;
-                /* Centers content vertically */
-            }
+                .scrolling-logos {
+                    animation: scroll 20s linear infinite;
+                }
+            </style>
 
+            <!-- Footer -->
+            <footer class="bg-blue-900 text-white py-6">
+                <!-- Copyright -->
 
-            #parentCarouselInner {
-                display: flex;
-                transition: transform 0.5s ease-in-out;
-                height: 100%;
-            }
-
-            .parentSlide {
-                flex-shrink: 0;
-                width: 100%;
-                position: relative;
-                height: 100%;
-            }
-
-            /* Sub Carousel Styles */
-            .subCarousel {
-                position: relative;
-                height: 250px;
-                /* Image portion height */
-            }
-
-            .subCarouselInner {
-                display: flex;
-                transition: transform 0.5s ease-in-out;
-                height: 100%;
-            }
-
-            .subSlide {
-                flex-shrink: 0;
-                width: 100%;
-                height: 100%;
-            }
-        </style>
-    </head>
-
-    <body class="bg-gray-100 font-sans" style="font-family: 'Montserrat', sans-serif;">
-        <!-- Listings Section -->
-        <section id="listings" class="container mx-auto p-6">
-            <h2 class="text-3xl font-normal text-blue-900 mb-6 text-center">Featured Listings!</h2>
-
-            <!-- Parent Carousel Container -->
-            <div id="parentCarousel" class="relative bg-white rounded-lg shadow-lg overflow-hidden">
-                <div id="parentCarouselInner">
-                    <!-- Parent Slide 1 -->
-                    <div class="parentSlide">
-                        <!-- Sub Carousel for Slide 1 -->
-                        <div class="subCarousel relative">
-                            <div class="subCarouselInner h-full">
-                                <!-- 5 Sub Slides for Parent Slide 1 -->
-                                <div class="subSlide relative">
-                                    <img src="img/car2.jpg" alt="Home 1a" class="w-full h-full object-cover">
-                                    <!-- Overlays -->
-                                    <div class="absolute top-2 left-2">
-                                        <div
-                                            class="bg-orange-500 text-white text-xs font-normal uppercase px-2 py-1 rounded">
-                                            FEATURED</div>
-                                    </div>
-                                    <div class="absolute top-2 right-2 space-y-1">
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            FOR SALE</div>
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            NEW LISTING</div>
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            HOT OFFER</div>
-                                    </div>
-                                </div>
-                                <div class="subSlide relative">
-                                    <img src="img/car3.jpg" alt="Home 1b" class="w-full h-full object-cover">
-                                    <div class="absolute top-2 left-2">
-                                        <div
-                                            class="bg-orange-500 text-white text-xs font-normal uppercase px-2 py-1 rounded">
-                                            FEATURED</div>
-                                    </div>
-                                    <div class="absolute top-2 right-2 space-y-1">
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            FOR SALE</div>
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            NEW LISTING</div>
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            HOT OFFER</div>
-                                    </div>
-                                </div>
-                                <div class="subSlide relative">
-                                    <img src="img/car1.jpg" alt="Home 1c" class="w-full h-full object-cover">
-                                    <div class="absolute top-2 left-2">
-                                        <div
-                                            class="bg-orange-500 text-white text-xs font-normal uppercase px-2 py-1 rounded">
-                                            FEATURED</div>
-                                    </div>
-                                    <div class="absolute top-2 right-2 space-y-1">
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            FOR SALE</div>
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            NEW LISTING</div>
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            HOT OFFER</div>
-                                    </div>
-                                </div>
-                                <div class="subSlide relative">
-                                    <img src="img/car4.jpg" alt="Home 1d" class="w-full h-full object-cover">
-                                    <div class="absolute top-2 left-2">
-                                        <div
-                                            class="bg-orange-500 text-white text-xs font-normal uppercase px-2 py-1 rounded">
-                                            FEATURED</div>
-                                    </div>
-                                    <div class="absolute top-2 right-2 space-y-1">
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            FOR SALE</div>
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            NEW LISTING</div>
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            HOT OFFER</div>
-                                    </div>
-                                </div>
-                                <div class="subSlide relative">
-                                    <img src="img/car5.jpg" alt="Home 1e" class="w-full h-full object-cover">
-                                    <div class="absolute top-2 left-2">
-                                        <div
-                                            class="bg-orange-500 text-white text-xs font-normal uppercase px-2 py-1 rounded">
-                                            FEATURED</div>
-                                    </div>
-                                    <div class="absolute top-2 right-2 space-y-1">
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            FOR SALE</div>
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            NEW LISTING</div>
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            HOT OFFER</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Sub Carousel Controls -->
-                            <button class="absolute left-2 top-1/2 transform -translate-y-1/2 text-orange-500 text-2xl"
-                                onclick="prevSubSlide(0)">&lt;</button>
-                            <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-orange-500 text-2xl"
-                                onclick="nextSubSlide(0)">&gt;</button>
-                        </div>
-                        <!-- Listing Details Card for Slide 1 -->
-                        <div class="bg-white p-4 rounded-b-lg mx-auto" style="width: 90%; height: 180px;">
-                            <p class="text-gray-800 text-base mb-2">
-                                Modern apartment in Vgc, Ajah Lagos offering luxurious living and top-tier amenities.
-                            </p>
-                            <div class="flex justify-between items-center mb-2">
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path
-                                            d="M10 2a6 6 0 00-6 6c0 4.418 6 10 6 10s6-5.582 6-10a6 6 0 00-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z">
-                                        </path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Lekki, Lagos</span>
-                                </div>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M2 13a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H3a1 1 0 01-1-1v-2z">
-                                        </path>
-                                        <path d="M2 7a1 1 0 011-1h14a1 1 0 011 1v5H2V7z"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">3 Beds</span>
-                                </div>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path
-                                            d="M4 2a1 1 0 00-1 1v10a1 1 0 001 1h2v2a1 1 0 001 1h6a1 1 0 001-1v-2h2a1 1 0 001-1V3a1 1 0 00-1-1H4zm2 11V4h8v9H6z">
-                                        </path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">2 Baths</span>
-                                </div>
-                            </div>
-                            <div class="flex items-center space-x-2 border-t border-gray-300 pt-2">
-                                <svg class="w-4 h-4 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M10 10a4 4 0 100-8 4 4 0 000 8z" />
-                                    <path fill-rule="evenodd"
-                                        d="M.458 16.042A8 8 0 0110 2a8 8 0 019.542 14.042A9.004 9.004 0 0110 18a9.004 9.004 0 01-9.542-1.958z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                                <a href="about.html" class="text-[10px] text-gray-500 underline">PETER ABIADES & CO</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Parent Slide 2 -->
-                    <div class="parentSlide">
-                        <div class="subCarousel relative h-64">
-                            <div class="subCarouselInner h-full">
-                                <!-- 5 Sub Slides for Parent Slide 2 -->
-                                <div class="subSlide relative">
-                                    <img src="img/mam1.jpg" alt="Home 2a" class="w-full h-full object-cover">
-                                    <div class="absolute top-2 left-2">
-                                        <div
-                                            class="bg-orange-500 text-white text-xs font-normal uppercase px-2 py-1 rounded">
-                                            FEATURED</div>
-                                    </div>
-                                    <div class="absolute top-2 right-2 space-y-1">
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            FOR SALE</div>
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            NEW LISTING</div>
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            HOT OFFER</div>
-                                    </div>
-                                </div>
-                                <div class="subSlide relative">
-                                    <img src="img/mam2.jpg" alt="Home 2b" class="w-full h-full object-cover">
-                                    <div class="absolute top-2 left-2">
-                                        <div
-                                            class="bg-orange-500 text-white text-xs font-normal uppercase px-2 py-1 rounded">
-                                            FEATURED</div>
-                                    </div>
-                                    <div class="absolute top-2 right-2 space-y-1">
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            FOR SALE</div>
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            NEW LISTING</div>
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            HOT OFFER</div>
-                                    </div>
-                                </div>
-                                <div class="subSlide relative">
-                                    <img src="img/matt3.jpg" alt="Home 2c" class="w-full h-full object-cover">
-                                    <div class="absolute top-2 left-2">
-                                        <div
-                                            class="bg-orange-500 text-white text-xs font-normal uppercase px-2 py-1 rounded">
-                                            FEATURED</div>
-                                    </div>
-                                    <div class="absolute top-2 right-2 space-y-1">
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            FOR SALE</div>
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            NEW LISTING</div>
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            HOT OFFER</div>
-                                    </div>
-                                </div>
-                                <div class="subSlide relative">
-                                    <img src="img/mam3.jpg" alt="Home 2d" class="w-full h-full object-cover">
-                                    <div class="absolute top-2 left-2">
-                                        <div
-                                            class="bg-orange-500 text-white text-xs font-normal uppercase px-2 py-1 rounded">
-                                            FEATURED</div>
-                                    </div>
-                                    <div class="absolute top-2 right-2 space-y-1">
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            FOR SALE</div>
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            NEW LISTING</div>
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            HOT OFFER</div>
-                                    </div>
-                                </div>
-                                <div class="subSlide relative">
-                                    <img src="img/mam4.jpg" alt="Home 2e" class="w-full h-full object-cover">
-                                    <div class="absolute top-2 left-2">
-                                        <div
-                                            class="bg-orange-500 text-white text-xs font-normal uppercase px-2 py-1 rounded">
-                                            FEATURED</div>
-                                    </div>
-                                    <div class="absolute top-2 right-2 space-y-1">
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            FOR SALE</div>
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            NEW LISTING</div>
-                                        <div class="bg-white text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                                            HOT OFFER</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="absolute left-2 top-1/2 transform -translate-y-1/2 text-orange-500 text-2xl"
-                                onclick="prevSubSlide(1)">&lt;</button>
-                            <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-orange-500 text-2xl"
-                                onclick="nextSubSlide(1)">&gt;</button>
-                        </div>
-                        <div class="bg-white p-4 rounded-b-lg mx-auto" style="width: 90%; height: 220px;">
-                            <p class="text-gray-800 text-base mb-2">
-                                Elegant apartment in Isheri North, GRA Lgos. Offering modern design and spacious
-                                interiors perfect for upscale living.
-                            </p>
-                            <div class="flex justify-between items-center mb-2">
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path
-                                            d="M10 2a6 6 0 00-6 6c0 4.418 6 10 6 10s6-5.582 6-10a6 6 0 00-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z">
-                                        </path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">Victoria Island</span>
-                                </div>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M2 13a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H3a1 1 0 01-1-1v-2z">
-                                        </path>
-                                        <path d="M2 7a1 1 0 011-1h14a1 1 0 011 1v5H2V7z"></path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">4 Beds</span>
-                                </div>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path
-                                            d="M4 2a1 1 0 00-1 1v10a1 1 0 001 1h2v2a1 1 0 001 1h6a1 1 0 001-1v-2h2a1 1 0 001-1V3a1 1 0 00-1-1H4zm2 11V4h8v9H6z">
-                                        </path>
-                                    </svg>
-                                    <span class="text-gray-600 text-sm">2 Baths</span>
-                                </div>
-                            </div>
-                            <div class="flex items-center space-x-2 border-t border-gray-300 pt-2">
-                                <svg class="w-4 h-4 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M10 10a4 4 0 100-8 4 4 0 000 8z" />
-                                    <path fill-rule="evenodd"
-                                        d="M.458 16.042A8 8 0 0110 2a8 8 0 019.542 14.042A9.004 9.004 0 0110 18a9.004 9.004 0 01-9.542-1.958z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                                <a href="about.html" class="text-[10px] text-gray-500 underline">PETER ABIADES & CO</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Parent Carousel Controls -->
-                    <button id="prevParent"
-                        class="absolute left-4 top-1/2 transform -translate-y-1/2 text-orange-500 text-2xl">&lt;</button>
-                    <button id="nextParent"
-                        class="absolute right-4 top-1/2 transform -translate-y-1/2 text-orange-500 text-2xl">&gt;</button>
-                </div>
-        </section>
-        <section class="my-8 font-sans text-center">
-            <h1 class="text-2xl">
-                <section class="my-8 font-sans text-center">
-                    <h1 class="text-3xl text-blue-900 mb-4">
-                        Who We Are
-                    </h1>
-                    <div class="mt-3 text-gray-500 text-base leading-relaxed">
-                        <p>
-                            PETER ABIADE &amp; CO. is a professional firm of estate surveyors &amp; valuers, established
-                            in 2005 and fully registered with the Estate Surveyors and Valuers Registration Board of
-                            Surveying and Valuation (ESVRBON) throughout the Federation, as well as with the Corporate
-                            Affairs Commission, Abuja. Our team of seasoned experts excels in property valuation, market
-                            analysis, and comprehensive property management.
-                        </p>
-                        <p>
-                            We provide a full spectrum of estate agency services—from negotiating leases and sales to
-                            procuring residential, commercial, industrial, and recreational properties. In addition, our
-                            rigorous feasibility and viability appraisals, along with specialized real estate
-                            consultancy, set us apart.
-                        </p>
-                        <p>
-                            While our credentials empower us to practice every facet of estate surveying and valuation,
-                            our principal focus remains property management, driven by leadership with over a decade of
-                            industry expertise. With unwavering confidence and commitment, we deliver excellence that
-                            inspires trust in every project.
-                        </p>
-                    </div>
-
-
-                    <a href="about-us.html"
-                        class="mt-4 inline-flex items-center bg-orange-500 text-white corner-radius 10 py-2 px-4 rounded mx-auto">
-                        <span class="mr-2"></span>
-                        Our Firm →
-                    </a>
-                </section>
-                <section class="w-full h-[60vh] sm:h-[80vh] md:h-screen bg-cover bg-center"
-                    style="background-image: url('img/FLIER.svg');">
-                    <!-- This section shows only the background image -->
-                </section>
-
-                <!-- Mission Text Container -->
-                <section class="w-full bg-white py-10">
-                    <div class="container mx-auto text-center">
-                        <h4 class="text-sm font-bold text-blue-900 mb-4">__ OUR MISSION __</h4>
-                        <h2 class="text-4xl font-regular text-blue-900 mb-2">We Build Suitable Communities</h2>
-                        <p class="text-base text-gray-600">
-                            At Peter Abiade & Co, client satisfaction is at the core of everything we do. Every project
-                            undergoes a thorough quality assurance process to ensure durability, functionality, and
-                            aesthetic excellence. We integrate sustainable practices, including efficient water and
-                            energy management, as well as responsible waste disposal, to create eco-friendly
-                            developments. Our off-plan approach ensures that you are actively involved at every
-                            stage—from architectural design to construction and completion—so your vision is realized
-                            with precision. We don’t just build structures; we create spaces that enhance lives and
-                            communities.
-                        </p>
-                    </div>
-                </section>
-
-                <!-- Partner Logos Slider (Above Footer) -->
-                <section class="bg-white py-4 overflow-hidden">
-                    <div class="relative">
-                        <div class="flex items-center space-x-8 scrolling-logos">
-                            <!-- Example partner logos – repeat them for seamless scrolling -->
-                            <img src="img/Esvarbon.jpg" alt="Partner 1" class="h-12 w-auto">
-                            <img src="img/OIP.jpeg" alt="Partner 2" class="h-12 w-auto">
-                            <img src="img/PAC LOGO.svg" alt="Partner 3" class="h-12 w-auto">
-                            <img src="img/djfmz3p3.png" alt="Partner 4" class="h-12 w-auto">
-                            <!-- Repeat logos for seamless loop -->
-                            <img src="img/Esvarbon.jpg" alt="Partner 1" class="h-12 w-auto">
-                            <img src="img/OIP.jpeg" alt="Partner 2" class="h-12 w-auto">
-                            <img src="img/PAC LOGO.svg" alt="Partner 3" class="h-12 w-auto">
-                            <img src="img/djfmz3p3.png" alt="Partner 4" class="h-12 w-auto">
-                        </div>
-                    </div>
-                </section>
                 <!-- Contact Information -->
                 <div class="container mx-auto px-6">
                     <div class="flex flex-col md:flex-row md:justify-between items-center">
-
-                    </div>
-                </div>
-                </div>
-                </footer>
-
-                <!-- CSS for the Partner Logos Slider -->
-                <style>
-                    @keyframes scroll {
-                        0% {
-                            transform: translateX(0);
-                        }
-
-                        100% {
-                            transform: translateX(-50%);
-                        }
-                    }
-
-                    .scrolling-logos {
-                        animation: scroll 20s linear infinite;
-                    }
-                </style>
-
-                <!-- Footer -->
-                <footer class="bg-blue-900 text-white py-6">
-                    <!-- Copyright -->
-
-                    <!-- Contact Information -->
-                    <div class="container mx-auto px-6">
-                        <div class="flex flex-col md:flex-row md:justify-between items-center">
-                            <!-- Address with Icon -->
-                            <div class="flex items-center mb-4 md:mb-0">
-                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd"
-                                        d="M5.05 2.05a7 7 0 019.9 0 7 7 0 010 9.9l-4.95 4.95a.7.7 0 01-.99 0L5.05 11.95a7 7 0 010-9.9zM10 9a2 2 0 100-4 2 2 0 000 4z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                                <a href="https://www.google.com/maps/search/?api=1&query=Mystee-Kay+Plaza,+Office+1,+2nd+Floor,+551+Agege+Motor+Road,+Ladipo+Estate,+Ladipo-Oshodi,+Lagos"
-                                    target="_blank" class="underline text-sm text-orange-500">
-                                    Mystee-Kay Plaza, Office 1, 2nd Floor, 551 Agege Motor Road, Ladipo Lagos.
-                                </a>
+                        <!-- Address with Icon -->
+                        <div class="flex items-center mb-4 md:mb-0">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M5.05 2.05a7 7 0 019.9 0 7 7 0 010 9.9l-4.95 4.95a.7.7 0 01-.99 0L5.05 11.95a7 7 0 010-9.9zM10 9a2 2 0 100-4 2 2 0 000 4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Mystee-Kay+Plaza,+Office+1,+2nd+Floor,+551+Agege+Motor+Road,+Ladipo+Estate,+Ladipo-Oshodi,+Lagos"
+                                target="_blank" class="underline text-sm text-orange-500">
+                                Mystee-Kay Plaza, Office 1, 2nd Floor, 551 Agege Motor Road, Ladipo Lagos.
+                            </a>
+                        </div>
+                        <!-- Phone Numbers and Emails -->
+                        <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
+                            <div class="text-sm">
+                                <p>08033338814, 08098338814, 08128144252</p>
                             </div>
-                            <!-- Phone Numbers and Emails -->
-                            <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
-                                <div class="text-sm">
-                                    <p>08033338814, 08098338814, 08128144252</p>
-                                </div>
-                                <div class="text-sm">
-                                </div>
-                                <div class="container mx-auto text-center mb-4">
-                                    <p class="text-sm">&copy; 2025 Peter Abiade & Co</p>
-                                </div>
+                            <div class="text-sm">
+                            </div>
+                            <div class="container mx-auto text-center mb-4">
+                                <p class="text-sm">&copy; 2025 Peter Abiade & Co</p>
                             </div>
                         </div>
                     </div>
-                </footer>
-                <script>
-                    // Parent Carousel Logic
-                    let currentParentSlide = 0;
-                    const parentSlides = document.querySelectorAll('.parentSlide');
-                    const totalParentSlides = parentSlides.length;
-                    const parentCarouselInner = document.getElementById('parentCarouselInner');
+                </div>
+            </footer>
+            <script>
+                // Parent Carousel Logic
+                let currentParentSlide = 0;
+                const parentSlides = document.querySelectorAll('.parentSlide');
+                const totalParentSlides = parentSlides.length;
+                const parentCarouselInner = document.getElementById('parentCarouselInner');
 
-                    function updateParentCarousel() {
-                        const offset = -currentParentSlide * 100;
-                        parentCarouselInner.style.transform = `translateX(${offset}%)`;
-                    }
+                function updateParentCarousel() {
+                    const offset = -currentParentSlide * 100;
+                    parentCarouselInner.style.transform = `translateX(${offset}%)`;
+                }
 
-                    document.getElementById('nextParent').addEventListener('click', () => {
-                        currentParentSlide = (currentParentSlide + 1) % totalParentSlides;
-                        updateParentCarousel();
-                    });
-                    document.getElementById('prevParent').addEventListener('click', () => {
-                        currentParentSlide = (currentParentSlide - 1 + totalParentSlides) % totalParentSlides;
-                        updateParentCarousel();
-                    });
+                document.getElementById('nextParent').addEventListener('click', () => {
+                    currentParentSlide = (currentParentSlide + 1) % totalParentSlides;
+                    updateParentCarousel();
+                });
+                document.getElementById('prevParent').addEventListener('click', () => {
+                    currentParentSlide = (currentParentSlide - 1 + totalParentSlides) % totalParentSlides;
+                    updateParentCarousel();
+                });
 
-                    // Auto Slide Parent Carousel every 6 seconds
-                    setInterval(() => {
-                        currentParentSlide = (currentParentSlide + 1) % totalParentSlides;
-                        updateParentCarousel();
-                    }, 6000);
+                // Auto Slide Parent Carousel every 6 seconds
+                setInterval(() => {
+                    currentParentSlide = (currentParentSlide + 1) % totalParentSlides;
+                    updateParentCarousel();
+                }, 6000);
 
-                    // Sub Carousel Logic for Each Parent Slide
-                    const currentSubSlides = [0, 0, 0, 0]; // one per parent slide
-                    const totalSubSlides = 5; // each sub-carousel has 5 slides
+                // Sub Carousel Logic for Each Parent Slide
+                const currentSubSlides = [0, 0, 0, 0]; // one per parent slide
+                const totalSubSlides = 5; // each sub-carousel has 5 slides
 
-                    function updateSubCarousel(parentIndex) {
-                        const subCarouselInner = document.querySelectorAll('.subCarouselInner')[parentIndex];
-                        const offset = -currentSubSlides[parentIndex] * 100;
-                        subCarouselInner.style.transform = `translateX(${offset}%)`;
-                    }
+                function updateSubCarousel(parentIndex) {
+                    const subCarouselInner = document.querySelectorAll('.subCarouselInner')[parentIndex];
+                    const offset = -currentSubSlides[parentIndex] * 100;
+                    subCarouselInner.style.transform = `translateX(${offset}%)`;
+                }
 
-                    function nextSubSlide(parentIndex) {
-                        currentSubSlides[parentIndex] = (currentSubSlides[parentIndex] + 1) % totalSubSlides;
-                        updateSubCarousel(parentIndex);
-                    }
-                    function prevSubSlide(parentIndex) {
-                        currentSubSlides[parentIndex] = (currentSubSlides[parentIndex] - 1 + totalSubSlides) % totalSubSlides;
-                        updateSubCarousel(parentIndex);
-                    }
+                function nextSubSlide(parentIndex) {
+                    currentSubSlides[parentIndex] = (currentSubSlides[parentIndex] + 1) % totalSubSlides;
+                    updateSubCarousel(parentIndex);
+                }
+                function prevSubSlide(parentIndex) {
+                    currentSubSlides[parentIndex] = (currentSubSlides[parentIndex] - 1 + totalSubSlides) % totalSubSlides;
+                    updateSubCarousel(parentIndex);
+                }
 
-                </script>
-    </body>
+            </script>
+</body>
 
-    </html>
+</html>
 
 </body>
 
