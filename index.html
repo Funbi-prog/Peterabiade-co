@@ -165,35 +165,28 @@
                     class="mt-4 inline-flex items-center bg-orange-500 text-white corner-radius 10 py-2 px-4 rounded mx-auto">
                     <span class="mr-2"></span>
                     Our Firm →
-                </a>
-                <section class="w-full h-[60vh] sm:h-[80vh] md:h-screen bg-cover bg-center"
+                    <section class="w-full h-[60vh] sm:h-[80vh] md:h-screen bg-cover bg-center"
                     style="background-image: url('img/FLIER.svg');">
                     <!-- This section shows only the background image -->
                 </section>
-
+                
                 <style>
                     @media (max-width: 768px) {
-
                         /* For mobile view */
                         .bg-cover {
-                            background-size: contain;
-                            /* Adjusts the image to fit within the container */
-                            background-position: center center;
-                            /* Keeps the image centered */
+                            background-size: 90% auto; /* Slightly reduce the size on mobile */
+                            background-position: center center; /* Keeps the image centered */
                         }
                     }
-
+                
                     @media (min-width: 768px) {
-
                         /* For tablet and desktop view */
                         .bg-cover {
-                            background-size: cover;
-                            /* Ensures the image fully covers the section */
-                            background-position: center center;
-                            /* Keeps the image centered */
+                            background-size: cover; /* Ensure the image fully covers the section */
+                            background-position: center center; /* Keeps the image centered */
                         }
                     }
-                </style>
+                </style>                
             </section>
 
 
@@ -259,31 +252,30 @@
             </style>
 
             <!-- Footer -->
-            <footer class="bg-blue-900 text-white py-6">
-                <div class="container mx-auto px-6">
-                    <div class="flex flex-col md:flex-row md:justify-between items-center">
-                        <div class="flex items-center mb-4 md:mb-0">
-                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M5.05 2.05a7 7 0 019.9 0 7 7 0 010 9.9l-4.95 4.95a.7.7 0 01-.99 0L5.05 11.95a7 7 0 010-9.9zM10 9a2 2 0 100-4 2 2 0 000 4z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                            <a href="https://www.google.com/maps/search/?api=1&query=Mystee-Kay+Plaza,+Office+1,+2nd+Floor,+551+Agege+Motor+Road,+Ladipo+Estate,+Ladipo-Oshodi,+Lagos"
-                                target="_blank" class="underline text-sm text-orange-500">
-                                Mystee-Kay Plaza, Office 1, 2nd Floor, 551 Agege Motor Road, Ladipo Lagos.
-                            </a>
-                        </div>
-
-                        <div class="text-sm">
-                            <p>08033338814, 08098338814, 08128144252</p>
-                        </div>
-
-                        <div class="text-center mt-4 md:mt-0">
-                            <p class="text-sm">&copy; 2025 Peter Abiade & Co</p>
-                        </div>
-                    </div>
-                </div>
+            <footer class="w-full bg-blue-900 text-white p-4 mt-8">
+                <!-- Your footer content here -->
+                <p class="text-center">© 2025 Your Website. All Rights Reserved.</p>
             </footer>
+            
+            <style>
+                /* Make sure the footer stays at the bottom */
+                body, html {
+                    height: 100%;
+                    margin: 0;
+                }
+            
+                .footer-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    min-height: 100vh;
+                }
+            
+                footer {
+                    margin-top: auto; /* Pushes the footer to the bottom */
+                }
+            </style>
+            
 
             <script>
                 // Parent Carousel Logic
