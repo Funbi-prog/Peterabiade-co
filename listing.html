@@ -124,6 +124,75 @@
                 </div>
             </div>
         </div>
+        <!-- Swiper.js Styles -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Property 3: FOR SALE -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <!-- Swiper Container -->
+            <div class="swiper mySwiper relative w-full h-96">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide flex justify-center items-center"><img src="img/New0.jpg"
+                            alt="Chevy View Estate Lekki" class="w-full h-96 object-contain"></div>
+                    <div class="swiper-slide flex justify-center items-center"><img src="img/New.jpg"
+                            alt="Chevy View Estate Lekki" class="w-full h-96 object-contain"></div>
+                    <div class="swiper-slide flex justify-center items-center"><img src="img/New2.jpg"
+                            alt="Chevy View Estate Lekki" class="w-full h-96 object-contain"></div>
+                    <div class="swiper-slide flex justify-center items-center"><img src="img/New3.jpg"
+                            alt="Chevy View Estate Lekki" class="w-full h-96 object-contain"></div>
+                    <div class="swiper-slide flex justify-center items-center"><img src="img/New4.jpg"
+                            alt="Chevy View Estate Lekki" class="w-full h-96 object-contain"></div>
+                </div>
+
+                <!-- White Navigation Buttons -->
+                <div class="swiper-button-next !text-white !text-4xl !font-bold drop-shadow-lg"></div>
+                <div class="swiper-button-prev !text-white !text-4xl !font-bold drop-shadow-lg"></div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- Property Details -->
+            <div class="p-6">
+                <h3 class="text-xl font-semibold text-orange-600">TO LEASE</h3>
+                <p class="text-gray-700 mt-2">Chevy View Estate Lekki: A beautiful 4-bedroom terraced house with 24-hour
+                    power supply, ample parking space, and more.</p>
+                <ul class="text-gray-600 text-sm mt-3">
+                    <li><strong>Price:</strong> ₦250,000,000</li>
+                    <li><strong>Location:</strong> Chevy View Estate, Lekki</li>
+                </ul>
+                <a href="tel:+2348098338814" class="text-blue-600 underline mt-3 block">Call an Agent</a>
+            </div>
+        </div>
+
+        <!-- Swiper Initialization Script -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var swiper = new Swiper(".mySwiper", {
+                    loop: true,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                });
+
+                // Force white color for arrows (Swiper's default styles can override Tailwind)
+                document.querySelectorAll('.swiper-button-next, .swiper-button-prev').forEach(button => {
+                    button.style.color = "white";
+                });
+            });
+        </script>
+
+
     </section>
 
 
